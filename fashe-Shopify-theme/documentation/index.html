@@ -1,0 +1,455 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+
+<title>Sophie - Responsive Shopify Theme - User guide</title>
+
+<meta name="description" content="description">
+<meta name="author" content="MassTechnologist">
+<meta name="copyright" content="MassTechnologist">
+<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+<meta name="date" content="2017-12-1T00:00:00+02:00">
+
+<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+
+
+
+<script src="assets/js/jquery.js"></script>
+
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+
+<script>document.createElement('section');var duration='500',easing='swing';</script>
+<script src="assets/js/script.js"></script>
+
+<style>
+	html{background-color:#FFFFFF;color:#383838;}
+	::-moz-selection{background:#444444;color:#DDDDDD;}
+	::selection{background:#444444;color:#DDDDDD;}
+	#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+	a{color:#0000FF;}
+	.btn {
+		border-radius:3px;
+	}
+	.btn-primary {
+		  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+		  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+		  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+		  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+		  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+		  background-image: linear-gradient(top, #0088CC, #0044CC);
+		  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+		  border-color: #0044CC #0044CC #bfbfbf;
+		  color:#FFFFFF;
+	}
+	.btn-primary:hover,
+	.btn-primary:active,
+	.btn-primary.active,
+	.btn-primary.disabled,
+	.btn-primary[disabled] {
+	  border-color: #0088CC #0088CC #bfbfbf;
+	  background-color: #0044CC;
+	}
+	hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+	#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+	#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+	#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+	#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+	#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+	#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+	#documenter_copyright{display:block !important;visibility:visible !important;}
+</style>
+
+</head>
+<body class="documenter-project-presiden-multistore-responsive-shopify-theme">
+<div id="documenter_sidebar">
+	<a href="#documenter_cover" id="documenter_logo"></a>
+	<ul id="documenter_nav">
+		<li><a class="current" href="#documenter_cover">Start</a></li>
+			
+		<li><a href="#overview" title="Overview">Overview</a></li>
+		<li><a href="#theme_installation" title="Theme Installation">Theme Installation</a>
+			<ul>
+				<li><a href="#theme_installation_sample_products">Sample Products</a>
+			</ul>
+		</li>
+		<li><a href="#demos_setup" title="Demos Setup">Demos Setup</a>
+			<ul>
+				<li><a href="#demos_setup_sample_images">Sample images</a>
+				<li><a href="#demos_setup_sample_demo_config_files">Sample demo config files</a>
+				<li><a href="#demos_setup_sample_products">Sample Products</a>
+				<li><a href="#demos_setup_sample_products">Sample Products</a>
+			</ul>
+		</li>
+		<li><a href="#theme_customization" title="Theme Customization">Theme Customization</a>
+			<ul>
+				<li><a href="#theme_customization_header">Header</a>
+				<li><a href="#theme_customization_megamenu">Megamenu</a>
+			</ul>
+		</li>
+		<li><a href="#section_based_theme" title="Section Based Theme">Section Based Theme</a></li>
+		<li><a href="#section_slider" title="Section Slider">Section Slider</a></li>
+		<li><a href="#section_adverts" title="Section Adverts">Section Adverts</a></li>
+		<li><a href="#section_product_tabs" title="Section Product Tabs">Section Product Tabs</a></li>
+		<li><a href="#section_feature_collection" title="Section Feature Collection">Section Feature Collection</a></li>
+		<li><a href="#section_service_box" title="Section Service Box">Section Service Box</a></li>
+		<li><a href="#section_brands" title="Section Brands">Section Brands</a></li>
+		<li><a href="#section_instagram_feed" title="Section Instagram Feed">Section Instagram Feed</a></li>
+		<li><a href="#footer" title="Footer">Footer</a></li>
+		<li><a href="#product_page" title="Product page">Product page</a></li>
+		<li><a href="#contact_page" title="Contact Page">Contact Page</a></li>
+		<li><a href="#collection_page" title="Collection Page">Collection Page</a></li>
+		<li><a href="#social_sharing" title="Social sharing">Social sharing</a></li>
+		<li><a href="#setup_multiple_currencies" title="Setup Multiple Currencies">Setup Multiple Currencies</a></li>
+
+	</ul>
+	<div id="documenter_copyright">Copyright MassTechnologist 2017<br>
+	made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+	</div>
+</div>
+<div id="documenter_content">
+<section id="documenter_cover">
+<h1>Sophie - Responsive Shopify Theme</h1>
+<h2>User guide</h2>
+<div id="documenter_buttons">
+	
+</div>
+<hr>
+<ul>
+<li>created: 28/08/2017</li>
+<li>latest update: 08/28/2017</li>
+<li>by: MassTechnologist</li>
+<li><a href=""></a></li>
+<li>email: <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#109;&#97;&#115;&#115;&#116;&#101;&#99;&#104;&#110;&#111;&#108;&#111;&#103;&#105;&#115;&#116;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#109;&#97;&#115;&#115;&#116;&#101;&#99;&#104;&#110;&#111;&#108;&#111;&#103;&#105;&#115;&#116;&#46;&#99;&#111;&#109;</a></li>
+</ul>
+<p>Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email us via our user page contact form here.
+Thanks so much!</p>
+</section>
+
+<section id="overview">
+<div class="page-header"><h3>Overview</h3><hr class="notop"></div>
+<p style="box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: rgb(84, 84, 84); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+Looking for a great ecommerce store to sell your items is your necessity now? Don’t hesitate, <strong>Sophie Responsive Shopify theme</strong> is not a bad choice for you!</
+</p>
+<p style="box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: rgb(84, 84, 84); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+<strong>Sophie</strong> is a <strong>Shopify theme</strong>. From headers and menus to extensions, Sophies is flexible. Header is small and neat with logo, icons of topcart, setting and search. Slide is smooth with transitions of text and images. Most Viewed Products Slider with “Load More” button which show more many top viewed products. Category Tabs Slider show products of categories with number of products of each category. Daily deals module show timer and description of special products. Effect when hover on each product is very smooth with Add To Cart, Add To Wishlist, Add To Compare button. “New/Sale” labels are very nice and highlight in new and special products. Static blocks with elegant images and useful text, nice font bring fresh feelings for this theme. Posts are in Blog with advertisment content. Brand Logo Slider displays favorite logo and related logo in slider. Easy to custom these modules in Admin panel. When hover on a product, other side of that product will be shown via Product Rotator Image feature. Footer is also neat with introduction about your store, links, paypal icon, copyright.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: rgb(84, 84, 84); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+Don’t miss <strong> Sophie responsive Shopify theme</strong>!</p>
+
+<p style="box-sizing: border-box; margin: 0px 0px 20px; padding: 0px; color: rgb(84, 84, 84); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+Check our <strong> Youtube Video Tutorials</strong> <a href="https://www.youtube.com/playlist?list=PLvJCnPMUAdwrSvIt6G6Rmoc7f5x6Vv2p0" target="_blank">here</a>!</p>
+
+</section>
+<section id="theme_installation">
+<div class="page-header"><h3>Theme Installation</h3><hr class="notop"></div>
+<p>
+Follow the following instructions to install the theme on your store. Note that most of the images are from one of our other shopify theme but the process is simply the same</p>
+<ol>
+<li>
+	From your shop dashboard, go to Online Store &gt; Themes and click on upload theme link.&nbsp;<br>
+	<img alt="" src="assets/images/theme_upload_link.png"></li>
+<li>
+	Select the zip version of the theme and click on Upload button.&nbsp;<br>
+	<img alt="" src="assets/images/theme_upload_zip.png"></li>
+<li>
+	Once uploaded you&#39;ll see the theme listing below the published theme. Click on the publish button to make it live.&nbsp;<br>
+	<img alt="" src="assets/images/theme_publish.png"></li>
+</ol>
+<h4 id="theme_installation_sample_products">Sample Products</h4>
+<p>
+Sample products has been added to the zip in case your store doesn&#39;t have any products or you want to try with the demo products. Follow the following steps to upload demo products.</p>
+<ol>
+<li>
+	Go to the products tab and select the import button as can be seen in the screenshot.&nbsp;<br>
+	<img alt="" src="assets/images/theme_product_import.png"></li>
+<li>
+	Once done you need to add them to collections based on different criterias. Collections can be added by collection tab under products.<br>
+	<img alt="" src="assets/images/theme_demo_collection_create.png"></li>
+</ol>
+</section>
+<section id="demos_setup">
+<div class="page-header"><h3>Demos Setup</h3><hr class="notop"></div>
+<p>
+Theme comes with multiple demos. Follow the following instructions to setup the store theme based on the demos.&nbsp;</p>
+<h4 id="demos_setup_sample_images">Sample images</h4>
+<p>
+Sample images has been added to the zip with the name &#39;<strong>demo-images</strong>&#39; in the folder &#39;<strong>demos-data</strong>&#39; in case you want to setup the store with demo data. Follow the following steps to upload demo images.</p>
+<ol>
+<li>
+	Go to the <strong>settings &gt; Files</strong> and click on upload button as can be seen in the screenshot.&nbsp;<br>
+	<img alt="" src="assets/images/theme_demo_images_setup.png"></li>
+<li>
+	Select all the files in <strong>demos-data/demo-images</strong> folder and upload to server.</li>
+</ol>
+<h4 id="demos_setup_sample_demo_config_files">Sample demo config files</h4>
+<p>
+Sample config json fiiles has been added to the zip with the name &#39;<strong>settings-data</strong>&#39; in the folder &#39;<strong>demos-data</strong>&#39; in case you want to setup the store with any of the four demos. Follow the following steps to upload demo settings files to your store.</p>
+<ol>
+<li>
+	Go to the <strong>Online Store &gt; Themes &gt; Edit Html/CSS</strong>&nbsp;as can be seen in the screenshot.<br>
+	&nbsp;<img alt="" src="assets/images/theme_demo_config_setup_1.png"></li>
+<li>
+	There are four config files in&nbsp;<strong>demos-data/settings-data </strong>folder of the zip.Open the files based on the demo that you want to setup.</li>
+<li>
+	Select all the content of the file and upload it to the settings_data.json file of the theme located in config folder as can be seen in the screenshot&nbsp;<br>
+	<img alt="" src="assets/images/theme_demo_config_setup_2.png"></li>
+<li>
+	Open the store url and theme will be setup according to your demo.</li>
+</ol>
+<h4 id="demos_setup_sample_products">Sample Products</h4>
+<p>
+Sample products has been added to the zip in case your store doesn&#39;t have any products or you want to try with the demo products. Follow the following steps to upload demo products.</p>
+<ol>
+<li>
+	Go to the products tab and select the import button as can be seen in the screenshot.&nbsp;<br>
+	<img alt="" src="assets/images/theme_product_import.png"></li>
+<li>
+	Once done you need to add them to collections based on different criterias. Collections can be added by collection tab under products.<br>
+	<img alt="" src="assets/images/theme_demo_collection_create.png"></li>
+<li>
+	Then you need to assign the collection on the theme settings page.&nbsp;<br>
+	<img alt="" src="assets/images/theme_demo_collection_setup.png"></li>
+</ol>
+<h4 id="demos_setup_sample_products">Sample Products</h4>
+<div>
+Now you can also add videos against your products. All you need to do is to add a video link inside a video tag at the bottom of your product page after all the content. It should be like&nbsp;</div>
+<div>
+&nbsp;</div>
+<div>
+<span style="color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 15px;">&nbsp;[video]https://www.youtube.com/watch?v=Od8ZEmlDSn8[/video]</span></div>
+<div>
+&nbsp;</div>
+<div>
+<div>
+	When a video is found in the product description then a video thumbnail will be added to the products images slider and clicking on it will show the video.&nbsp;</div>
+<div>
+	&nbsp;</div>
+</div>
+<p>
+&nbsp;</p>
+</section>
+<section id="theme_customization">
+<div class="page-header"><h3>Theme Customization</h3><hr class="notop"></div>
+<p>
+In order to start setting up your theme, you need to customize it. Note that most of the images are from one of our other shopify theme but the process is simply the same.&nbsp;To start customization</p>
+<ol>
+<li>
+	Click on the customization link on the theme page</li>
+</ol>
+<p>
+<img alt="" src="assets/images/theme_customize.png"></p>
+<p>
+Typography</p>
+<p>
+Typography options allows you to change font family and size to be used for body, header and navigations elements as can been seen in the screenshot</p>
+<p>
+<img alt="" src="assets/images/theme_typography.png"></p>
+<h4 id="theme_customization_header">Header</h4>
+<p>
+First option is to select the type of the header design that you&#39;d like to use. Below screenshot shows the different options available on the header settings area. In order to upload logo, click on the image links to replace or add new logo.</p>
+<p>
+<img alt="" src="assets/images/theme_header.png"></p>
+<div>
+As can be seen i the above screenshot, menu can also be selected here for the theme header navigation.</div>
+<div>
+&nbsp;</div>
+<div>
+On right side accounts links are shown. If they are not shown then go to the admin &gt; settings &gt; checkout to enable the accounts creation</div>
+<div>
+&nbsp;</div>
+<div>
+<img alt="" src="assets/images/theme_header_accounts.png"></div>
+<div>
+&nbsp;</div>
+<div>
+<h4 id="theme_customization_megamenu">Megamenu</h4>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Now its time to add megamenus to the main menu. Currently two megamenu links can be added to the main menu each having four columns.&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<span style="line-height: 1.5em;">First the menu should be added on the navigational panel and added a single element to it as well as can be seen in the screenshot below.&nbsp;</span></p>
+</div>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+<img alt="" src="assets/images/theme_megamenu_add.png"></p>
+<div>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Then an item with the same name should be added to the main menu as can ben seen in the screenshot.</p>
+<div>
+	<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+		<img alt="" src="assets/images/theme_megamenu_add_main.png" style="color: rgb(34, 34, 34); font-family: Arial, Verdana, sans-serif;"></p>
+	<div>
+		<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+			Next Go to Settings area and click on megamenu1 and select the menu from the dropdown as can be seen in the screenshot.<br>
+			<img alt="" src="assets/images/theme_megamenu_setup1.png"></p>
+	</div>
+	<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+		Now its time to configure the 4 columns. Each column can have a menu, collection products or an image. Select a type and then add the relevant options to the menu.&nbsp;<br>
+		<img alt="" src="assets/images/theme_megamenu_setup2.png"></p>
+	<div>
+		<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+			Note that you need to have collections created before creating a menu out of it. Follow the&nbsp;<a href="https://help.shopify.com/manual/products/collections" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 255); text-decoration: none; cursor: pointer;">tutorial</a>&nbsp;for setting up collections. A collection menu would look like the screenshot below.&nbsp;</p>
+		<div>
+			<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+				<span style="line-height: 1.5em;">Similarly you can set the megamenu2 per the above instructions.&nbsp;</span></p>
+		</div>
+	</div>
+</div>
+</div>
+<p>
+&nbsp;</p>
+</section>
+<section id="section_based_theme">
+<div class="page-header"><h3>Section Based Theme</h3><hr class="notop"></div>
+<p class="plain" style="box-sizing: border-box; margin: 0px 0px 1.66667em; padding: 0px; line-height: inherit; font-size: 18px; color: rgb(42, 44, 46); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Lucida Grande&quot;, sans-serif;">
+This is a section based theme which allows advanced theme customization.</p>
+<p class="plain" style="box-sizing: border-box; margin: 0px 0px 1.66667em; padding: 0px; line-height: inherit; font-size: 18px; color: rgb(42, 44, 46); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Lucida Grande&quot;, sans-serif;">
+Think of sections as individual, customizable components of a theme. Within each section, you or your client can easily add, reorder, and remove chunks of content such as products, slideshows, videos, or collections.</p>
+<p class="plain" style="box-sizing: border-box; margin: 0px 0px 1.66667em; padding: 0px; line-height: inherit; font-size: 18px; color: rgb(42, 44, 46); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Lucida Grande&quot;, sans-serif;">
+You can preview your changes in real-time in either desktop or mobile view, offering more options to test our updated layouts in Shopify Themes on the fly.</p>
+<p class="plain" style="box-sizing: border-box; margin: 0px 0px 1.66667em; padding: 0px; line-height: inherit; font-size: 18px; color: rgb(42, 44, 46); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Lucida Grande&quot;, sans-serif;">
+Here&rsquo;s how easy it is to add new sections to a theme:</p>
+<p style="box-sizing: border-box; margin: 0px 0px 1.66667em; padding: 0px; line-height: inherit; font-size: 18px; color: rgb(42, 44, 46); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Lucida Grande&quot;, sans-serif;">
+<img alt="Adding a section to a Shopify Theme" class="marketing-block marketing-block--bordered" src="assets/images/image_2.gif?v=1476906201" style="box-sizing: border-box; vertical-align: middle; max-width: 100%; display: block; border-color: rgb(229, 229, 229); border-width: 1px; border-style: solid; margin: 0.625em 0px 1.875em;"></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1.66667em; padding: 0px; line-height: inherit; font-size: 18px; color: rgb(42, 44, 46); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Lucida Grande&quot;, sans-serif;">
+It&rsquo;s just as simple to reorder existing sections:</p>
+<p style="box-sizing: border-box; margin: 0px 0px 1.66667em; padding: 0px; line-height: inherit; font-size: 18px; color: rgb(42, 44, 46); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Lucida Grande&quot;, sans-serif;">
+<img alt="Reordering sections within a Shopify Theme" class="marketing-block marketing-block--bordered" src="assets/images/image_3.gif?v=1476906246" style="box-sizing: border-box; vertical-align: middle; max-width: 100%; display: block; border-color: rgb(229, 229, 229); border-width: 1px; border-style: solid; margin: 0.625em 0px 1.875em;"></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1.66667em; padding: 0px; line-height: inherit; font-size: 18px; color: rgb(42, 44, 46); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Lucida Grande&quot;, sans-serif;">
+Below screenshot shows all the sections that can be added to our theme.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 1.66667em; padding: 0px; line-height: inherit; font-size: 18px; color: rgb(42, 44, 46); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Lucida Grande&quot;, sans-serif;">
+<img alt="" src="assets/images/theme_section_available.png" style="color: rgb(34, 34, 34); font-family: Arial, Verdana, sans-serif; font-size: 12px;"></p>
+</section>
+<section id="section_slider">
+<div class="page-header"><h3>Section Slider</h3><hr class="notop"></div>
+<p>	This is the first section that is added to most of the themes. You&#39;ll see it already added with demo.&nbsp;</p>
+<p>	There a lots of options that you can customize on the page</p>
+<ol>
+<li>		First option to either set/unset auto rotation of slides.</li>
+<li>		Second field allow you to set time of each slide for display</li>
+<li>		Third option allows you to select the slider design to show</li>
+</ol>
+<p>	<img alt="" src="assets/images/theme_add_slider.png"></p>
+<p>	Next thing is to add content. You can add two types of content. A slider image which is shown on slider and side image which are shown on some designs on the side of sliders.</p>
+<p>	A maximum of 6 sliders can be added to each slideshow. For each slider there is</p>
+<ol>
+<li>		Image upload to background image. Leave blank if you don&#39;t want to have background image.</li>
+<li>		Text fields to add title and description text.</li>
+<li>		Button link fields to add link text and link</li>
+</ol>
+<p>	<img alt="" src="assets/images/theme_slider.png"></p>
+</section>
+<section id="section_adverts">
+<div class="page-header"><h3>Section Adverts</h3><hr class="notop"></div>
+<p>	This is a section for showing advertisement banners. You can create single or multiple sections out of it. There are multiple design options which you can choose from. The design options differ on the basis of showing single or multiple ad objects.&nbsp;</p>
+<p>	Below screenshot shows details about filling the options.</p>
+<p>	<img alt="" src="assets/images/theme_feature_advert.png"></p>
+</section>
+<section id="section_product_tabs">
+<div class="page-header"><h3>Section Product Tabs</h3><hr class="notop"></div>
+<p>	This section can be used to show products from multiple collections. The products are then shown in tabular view.</p>
+<p>	Below screenshot shows details about filling the options.&nbsp;</p>
+<p>	<img alt="" src="assets/images/theme_product_tab.png"></p>
+</section>
+<section id="section_feature_collection">
+<div class="page-header"><h3>Section Feature Collection</h3><hr class="notop"></div>
+<p>	This section allows you to show products from a single collection. &nbsp;</p>
+<p>	Below screenshot shows details about filling the options.&nbsp;</p>
+<p>	<img alt="" src="assets/images/theme_feature_bestseller.png"></p>
+<p>	&nbsp;</p>
+</section>
+<section id="section_service_box">
+<div class="page-header"><h3>Section Service Box</h3><hr class="notop"></div>
+<p>	This is the section for showing product features.&nbsp;</p>
+<p>	Below screenshot shows details about filling the options. You can get icon classes from fontawesome.io/icons/</p>
+<p>	<img alt="" src="assets/images/theme_feature_service_box.png"></p>
+<p>	&nbsp;</p>
+</section>
+<section id="section_brands">
+<div class="page-header"><h3>Section Brands</h3><hr class="notop"></div>
+<p>	This is the section that can be used to show brand images.</p>
+<p>	Below screenshot shows details about filling the options.</p>
+<p>	<img alt="" src="assets/images/theme_brand.png"></p>
+</section>
+<section id="section_instagram_feed">
+<div class="page-header"><h3>Section Instagram Feed</h3><hr class="notop"></div>
+<p>	This is the section which can be used show an instagram feed.&nbsp;</p>
+<p style="margin: 0px 0px 25px; padding: 0px; border: 0px; font-size: 12.8px; font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; vertical-align: baseline; line-height: 1.65em;">
+Instagram feed provide options to show photo feed from specific &quot;<strong>user</strong>&quot; only. &quot;<strong>By hashtag</strong>&quot; is no loger supported due to new Instagram policies.</p>
+<p style="margin: 0px 0px 25px; padding: 0px; border: 0px; font-size: 12.8px; font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; vertical-align: baseline; line-height: 1.65em;">
+<strong>Due to latest Instagram API changes you need to add access in order to show photos on your store:</strong></p>
+<ol style="margin: 0px 1.5em 1.5em 3.5em; padding-right: 0px; padding-left: 0px; border: 0px; font-size: 12.8px; font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; vertical-align: baseline; line-height: 19.2px;">
+<li style="margin: 0px 0px 10px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8px; font-family: inherit; vertical-align: baseline;">
+	<p>			Be sure that you are logged in to your Instagram account, and then&nbsp;<a href="http://instagram.pixelunion.net/" rel="nofollow" style="margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8px; font-family: inherit; vertical-align: baseline; color: rgb(226, 108, 4);" target="_blank">go to this page to Get your Access Token</a></p>
+</li>
+<li style="margin: 0px 0px 10px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8px; font-family: inherit; vertical-align: baseline;">
+	<p>			Once this page generates the code for you, please copy it and then paste under &#39;Access Token&#39; option</p>
+</li>
+</ol>
+</section>
+<section id="footer">
+<div class="page-header"><h3>Footer</h3><hr class="notop"></div>
+<p>	Footer area allow us to set contact inform, company information and newsletter form.</p>
+<p>	Below screenshot shows details about filling the options.</p>
+<p>	footer settings 1</p>
+<p>	<img alt="" src="assets/images/theme_footer_1.png"></p>
+<p>	footer settings 2</p>
+<p>	<img alt="" src="assets/images/theme_footer_2.png"></p>
+<p>	&nbsp;</p>
+</section>
+<section id="product_page">
+<div class="page-header"><h3>Product page</h3><hr class="notop"></div>
+<p>	Under product page section we can set the options for product page like adding extra tab for &#39;additional information&#39; , enabling/disabling reviews or showing related items feed.</p>
+<p>	Below screenshot shows details about filling the options.&nbsp;</p>
+<p>	<img alt="" src="assets/images/theme_product.png"></p>
+<p>	&nbsp;</p>
+</section>
+<section id="contact_page">
+<div class="page-header"><h3>Contact Page</h3><hr class="notop"></div>
+<p>	In order to use Contact Us page first you need to create a page by going to</p>
+<p>	<strong>Online Store &gt; Pages &gt; Add Page</strong></p>
+<p>	Add title and select page.content as template.&nbsp;</p>
+<p>	<img alt="" src="assets/images/theme_contactus.png"></p>
+<p>	The contact information are added from footer contact information. For map you need to go to google.com/maps for generating code and add that code onto theme settings &gt; contact page settings area.&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="collection_page">
+<div class="page-header"><h3>Collection Page</h3><hr class="notop"></div>
+<p>	Collection page setting allows you to configure the following options</p>
+<ol>
+<li>		Background header image for collection pages</li>
+<li>		Number of products to show</li>
+<li>		Show or hide the sidebar</li>
+<li>		products option to filter by tags or groups. Learn more about filtering <a href="https://docs.shopify.com/manual/more/official-shopify-themes/supply#enable-group-filtering">here</a></li>
+</ol>
+</section>
+<section id="social_sharing">
+<div class="page-header"><h3>Social sharing</h3><hr class="notop"></div>
+<p>	Social sharing option can be set from&nbsp;<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px;">&nbsp;Customize Theme &gt;&nbsp;</span><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56); line-height: 18px;">Social media</span><span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px;">&nbsp;section.</span></p>
+<p>	&nbsp;</p>
+</section>
+<section id="setup_multiple_currencies">
+<div class="page-header"><h3>Setup Multiple Currencies</h3><hr class="notop"></div>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+1. Go to&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">Admin &gt; Settings &gt; General</span></p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+2. Scroll down to&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">Standards &amp; formats</span>&nbsp;area, you&#39;ll see your&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">Currency</span>&nbsp;setting.</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+<img alt="" src="assets/images/theme_currencies.jpg"></p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+3. Click&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">change formatting</span>&nbsp;to open the&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">Currency Formatting</span>&nbsp;dialog.</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+4. Change&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">HTML with currency</span>&nbsp;and&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">HTML without currency</span>&nbsp;elements in the dialog.</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+&lt;span class=&quot;money&quot;&gt;${{amount}} USD&lt;/span&gt;<br>
+&lt;span class=&quot;money&quot;&gt;${{amount}}&lt;/span&gt;</p>
+<div>
+<img alt="" src="assets/images/theme_currencies2.jpg"></div>
+</section>
+
+</div>
+</body>
+</html>
